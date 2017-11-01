@@ -1,0 +1,15 @@
+server:
+  servlet:
+    context-path: /auth
+security:
+  basic:
+    #Disable the basic security since we already have enabled spring security
+    enabled: false
+endpoints:
+  flyway:
+    enabled: true
+spring:
+  datasource:
+    url: jdbc:mysql://localhost/users
+    username: mysqluser
+    password: mysqlpw
